@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">Welcome !</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form  [formGroup]="registerForm">
+        <ion-grid>
+          <ion-row color="primary" justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+              <div text-center>
+                <h3>Create your account!</h3>
+              </div>
+              <div padding>
+                <ion-item>
+                  <ion-input formControlName="name" name="name" type="text" placeholder="Ex: Tamilselvan"  required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input formControlName="email" name="email" type="email" placeholder="your@email.com"  required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input formControlName="password" name="password" type="password" placeholder="Password"  required></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input formControlName="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password"  required></ion-input>
+                </ion-item>
+              </div>
+              <div padding>
+                <ion-button  size="large" type="submit" (click)="register(registerForm.value)"  expand="block">Signup</ion-button>
+              </div>
+            </ion-col>
+
+            <label (click)="loginRedirecTo()">Already have an account?</label>
+          </ion-row>
+        </ion-grid>
+      </form>
+</ion-content>

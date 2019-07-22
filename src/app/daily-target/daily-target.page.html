@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button  defaultHref="home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Daily Planned Target</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-input type="date"></ion-input> -->
+
+  <ion-item>
+      <ion-label>Day</ion-label>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="sun">Sunday</ion-select-option>
+        <ion-select-option value="mon">Monday</ion-select-option>
+        <ion-select-option value="tue">Tuesday</ion-select-option>
+        <ion-select-option value="wed">Wednesday</ion-select-option>
+        <ion-select-option value="thursday">Thursday</ion-select-option>
+        <ion-select-option value="friday">Friday</ion-select-option>
+        <ion-select-option value="saturday">Saturday</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Target</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="25">25 %</ion-select-option>
+          <ion-select-option value="50">50 %</ion-select-option>
+          <ion-select-option value="75">75 %</ion-select-option>
+          <ion-select-option value="100">100 %</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+          <ion-label>Despatch Nos</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="1">Nill</ion-select-option>
+            <ion-select-option value="2">Less than 5</ion-select-option>
+            <ion-select-option value="3">Less than 10</ion-select-option>
+            <ion-select-option value="4">Less than 25</ion-select-option>
+            <ion-select-option value="5">Less than 50</ion-select-option>
+            <ion-select-option value="6">Less than 100</ion-select-option>
+          </ion-select>
+        </ion-item>
+</ion-content>

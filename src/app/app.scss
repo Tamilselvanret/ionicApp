@@ -1,0 +1,15 @@
+
+*{
+    --ion-color-primary-color: rgb(44, 44, 199);
+}
+ion-label{
+    color: var(--ion-color-primary-color,--ion-color-primary) !important;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.padding-15{
+    padding: 15px;
+}
